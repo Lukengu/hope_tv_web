@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block content%}
+       <div id="homecontent-top">
+      <div id="homecontent-movie">
+             <!-- Begin Flash Here -->
+          <video id='hls-example'  class="video-js vjs-default-skin" width="570" height="330" controls>
+              <source type="application/x-mpegURL" src="http://157.245.89.41:8080/hls/hope_tv.m3u8">
+          </video>
+           <!-- End Flash Here -->
+
+
+        <!-- Begin Flash Here -->
+       <!-- <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/V7eR7AqvUkI&amp;hl=en_US&amp;fs=1&amp;" width="580" height="340">
+          <param name="movie" value="http://www.youtube.com/v/V7eR7AqvUkI&amp;hl=en_US&amp;fs=1&amp;" />
+          <param name="wmode" value="opaque" />
+          <param name="quality" value="high" />
+          <param name="bgcolor" value="#EEEDE8" />
+          <param name="allowfullscreen" value="true" />
+          <param name="allowscriptaccess" value="never" />
+        </object>-->
+        <!-- End Flash Here -->
+      </div>
+      <div id="homecontent-topleft">
+        <h2 class="title">Latest News &amp; Information</h2>
+        <p><img src="{{ url_for('static', filename='images/demo/65x65.gif')}}" alt="" /> Feugiatrutrum rhoncus semper enim massa eu intesque ipsum velit orci dolorem. Atnatis dolor tincidunt nulla elit auctortis laculisi elit fauctortor natis loreet. <a href="#">Read More &raquo;</a></p>
+        <p><img src="{{ url_for('static', filename='images/demo/65x65.gif')}}" alt="" /> Feugiatrutrum rhoncus semper enim massa eu intesque ipsum velit orci dolorem. Atnatis dolor tincidunt nulla elit auctortis laculisi elit fauctortor natis loreet. <a href="#">Read More &raquo;</a></p>
+        <p><img src="{{ url_for('static', filename='images/demo/65x65.gif')}}" alt="" /> Feugiatrutrum rhoncus semper enim massa eu intesque ipsum velit orci dolorem. Atnatis dolor tincidunt nulla elit auctortis laculisi elit fauctortor natis loreet. <a href="#">Read More &raquo;</a></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="homecontent-middle">
+      <div class="adbox"> <a href="#"><img src="{{ url_for('static', filename='images/demo/468x60.gif')}}" alt="" /></a> </div>
+      <div class="adbox" style="margin-right:0;"> <a href="#"><img src="{{ url_for('static', filename='images/demo/468x60.gif')}}" alt="" /></a> </div>
+    </div>
+    <ul id="homecontent-bottom">
+      <li>
+        <p class="imgholder"><img src="{{ url_for('static', filename='images/demo/286x100.gif')}}" alt="" /></p>
+        <h2>About This Template</h2>
+        <p>This is a W3C standards compliant free website template from <a href="https://www.os-templates.com/">OS Templates</a>. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat. Adipisciniapellentum leo ut consequam ris felit elit id nibh sociis malesuada.</p>
+        <p class="readmore"><a href="#">Read More &raquo;</a></p>
+      </li>
+      <li>
+        <p class="imgholder"><img src="{{ url_for('static', filename='images/demo/286x100.gif')}}" alt="" /></p>
+        <h2>Template Terms of Use</h2>
+        <p>This template is distributed using a <a href="https://www.os-templates.com/template-terms">Website Template Licence</a>, which allows you to use and modify the template for both personal and commercial use when you keep the provided credit links in the footer. Leo ut consequam ris felit elit id nibh sociis malesuada.</p>
+        <p class="readmore"><a href="#">Read More &raquo;</a></p>
+      </li>
+      <li class="last">
+        <p class="imgholder"><img src="{{ url_for('static', filename='images/demo/286x100.gif')}}" alt="" /></p>
+        <h2>Indonectetus facilis leo nibh</h2>
+        <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat. Adipisciniapellentum leo ut consequam ris felit elit id nibh sociis malesuada.</p>
+        <p class="readmore"><a href="#">Read More &raquo;</a></p>
+      </li>
+    </ul>
+    <div class="clear"></div>
+{% endblock %}
+
+

@@ -1,0 +1,91 @@
+@charset "utf-8";
+/*
+Template Name: Music 4 U
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("navi.css");
+@import url("forms.css");
+
+html{overflow-y:scroll;}
+body{margin:0; padding:0; font-family:verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#666666; background-color:#F9F9F9; text-align:center;}
+
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{margin:0; padding:0; list-style-type:none;}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+img{margin:0; padding:0; border:0;}
+.imgl, .imgr{border:1px solid #000000; padding:5px; color:#FFFFFF; background-color:#999999;}
+.imgl{margin:0 8px 8px 0; clear:left;}
+.imgr{margin:0 0 8px 8px; clear:right;}
+
+/* ----------------------------------------------Container------------------------------------- */
+
+#container{position:relative; width:960px; margin:0 auto; padding:0; text-align:left; color:#333333; background-color:#FFFFFF;}
+
+/* ----------------------------------------------Head------------------------------------- */
+
+#head{display:block; float:left; width:960px; height:265px; padding-top:15px; color:#CCCCCC; background-color:#000000;}
+#head h1{display:block; width:360px; position:absolute; top:75px; left:10px; margin:0; padding:0; font-family:Georgia, "Times New Roman", Times, serif; font-size:60px; font-weight:normal;}
+#head h1 a{color:#CCCCCC; background-color:#000000;}
+#head #topads{display:block; width:468px; position:absolute; top:55px; right:10px;}
+
+/* ----------------------------------------------BreadCrumb------------------------------------- */
+
+#breadcrumb{}
+
+/* ----------------------------------------------Wrapper------------------------------------- */
+
+#wrapper{display:block; float:left; width:960px; padding:15px 10px;margin-top:35px;}
+#wrapper h1, #wrapper h2, #wrapper h3, #wrapper h4, #wrapper h5, #wrapper h6{font-family:Georgia, "Times New Roman", Times, serif; font-weight:normal; font-size:18px; margin:0 0 10px 0; padding:0;}
+#wrapper a{color:#FF9900; background-color:#FFFFFF;}
+#column p, #column ul, #column h1, #column h2, #column h3, #column h4, #column h5, #column h6{margin:0; padding:0; list-style:none; line-height:normal; font-weight:normal;}
+#column .holder{margin-bottom:15px;}
+#column .holder .title{font-size:14px; font-weight:bold; margin-bottom:8px; padding-bottom:5px; border-bottom:1px dotted #666666;}
+#column .holder li{margin-bottom:5px;}
+#column ul#banner125 li{display:inline; float:left; width:125px; height:125px; margin:0 0 10px 10px;}
+#column .text{font-size:12px;}
+#column .holder p.readmore{text-align:right; margin:5px 0 8px 0;}
+
+/* ----------------------------------------------Footer------------------------------------- */
+
+#footer{display:block; float:left; width:960px; padding:15px 10px; font-size:12px; color:#FFFFFF; background-color:#9F9F9F;}
+#footer ul{margin:0; padding:0; list-style:none;}
+#footer .footbox{display:block; float:left; width:300px; margin:0 20px 15px 0;}
+#footer .last{margin-right:0;}
+#footer .footbox h2{display:block; width:300px; margin:0 0 8px 0; padding:0 0 8px 0; font-size:13px; font-weight:bold; border-bottom:1px solid #FFFFFF;}
+#footer .footbox ul{display:block; width:290px; padding:5px; color:#666666; background-color:#FFFFFF;}
+#footer .footbox li{display:block; width:290px; margin:0 0 5px 0; padding:0 0 5px 0; color:#666666; background-color:#FFFFFF; border-bottom:1px solid #666666;}
+#footer .footbox li a{color:#FF9900; background-color:#FFFFFF;}
+#footer .footbox li.last{margin-bottom:0; padding-bottom:0; border-bottom:none;}
+
+/* Copyright */
+
+#footer #copyright{display:block; clear:both; width:940px; padding:15px 10px; font-size:11px;}
+#copyright, #copyright a{color:#FFFFFF; background-color:#252525;}
+#copyright p{margin:0; padding:0;}
+
+/* ----------------------------------------------Social------------------------------------- */
+
+#topbar{display:block; width:960px; height:45px; padding:10px 10px 0 10px; position:absolute; top:0; left:0; color:#CCCCCC; background-color:#363636;}
+#topbar ul{margin:0; padding:0; list-style:none;}
+#topbar #social{display:block; float:right;}
+#topbar #social li{display:inline; margin-left:20px; cursor:pointer;}
+#topbar #search{display:block; float:left;}
+#topbar #search form, #topbar #search fieldset, #topbar #search legend{margin:0; padding:0; border:none;}
+#topbar #search legend{display:none;}
+#topbar #search input{display:block; float:left; width:229px; margin:0; padding:5px; color:#CCCCCC; background-color:#393939; border:1px solid #000000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+#topbar #search input#submit{display:block; width:auto; height:auto; margin:0 0 0 5px; padding:4px; color:#CCCCCC; background-color:#1A1A1A;}

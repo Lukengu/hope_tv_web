@@ -1,7 +1,10 @@
 import os
 
 from flask import Flask
+from src.shared.routes import Route
 
-def create_app()
- 	app = Flask(__name__)
-   	return app
+
+def create_app():
+    app = Flask(__name__)
+    Route.init_route(app)
+    return app

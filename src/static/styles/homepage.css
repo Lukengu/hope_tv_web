@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*
+Template Name: Music 4 U
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+File: HomePage CSS
+*/
+
+.readmore{display:block; width:100%; text-align:right; font-weight:bold;}
+.readmore a{text-decoration:none;}
+
+/* ----------------------------------------------Top Featured Block------------------------------------- */
+
+#homecontent-top{display:block; float:left; width:940px; margin:0 0 15px 0; padding:0;}
+
+/* Left Block */
+
+#homecontent-top #homecontent-movie{display:inline; float:right; width:580px; height:340px; border:5px solid #BBBBBB;}
+#homecontent-top #homecontent-topleft{display:block; float:left; width:340px; margin:0; padding:0;}
+#homecontent-top #homecontent-topleft a{color:#FF9900; background-color:#FFFFFF; font-weight:bold;}
+#homecontent-top #homecontent-topleft h2.title{display:block; width:330px; margin:0; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; font-weight:bold; color:#363636; background-color:#F7F7F7;}
+#homecontent-top #homecontent-topleft p{display:block; width:330px; margin:25px 0 0 0; padding:0 0 11px 0; border-bottom:1px solid #DDDDDD; font-size:12px;}
+#homecontent-top #homecontent-topleft img{float:left; margin:0 5px 3px 0; border:2px solid #DDDDDD;}
+
+/* ----------------------------------------------Advertising Block------------------------------------- */
+
+#homecontent-middle{display:inline; float:left; width:940px; height:60px; margin:0 0 15px 0; padding:10px 0; text-align:center; border-top:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD;}
+#homecontent-middle .adbox{display:block; float:left; width:468px; height:60px; margin-right:4px;}
+
+/* ----------------------------------------------Bottom Content Block------------------------------------- */
+
+ul#homecontent-bottom{display:block; float:left; width:940px; margin:0; padding:0; list-style:none;}
+ul#homecontent-bottom li{display:block; float:left; width:300px; margin:0 20px 0 0; padding:0;}
+#wrapper ul#homecontent-bottom li.last{margin-right:0;}
+ul#homecontent-bottom li p.imgholder{display:block; width:286px; height:100px; margin:0 0 10px 0; padding:6px; color:#000000; background-color:#EEEEEE; border:1px solid #DDDDDD;}
+#wrapper ul#homecontent-bottom li h2{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; font-weight:bold;}
+ul#homecontent-bottom p.readmore{display:block; width:290px; padding:5px; text-align:right; color:#FF9900; background-color:#F7F7F7;}
+ul#homecontent-bottom p.readmore a{color:#FF9900; background-color:#F7F7F7;}

@@ -1,0 +1,91 @@
+<!DOCTYPE >
+<!--
+Template Name: Music 4 U
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html >
+<head>
+  <title>Hope Tv Africa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/layout.css')}}" type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/homepage.css')}}" type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/video.css')}}" type="text/css" />
+     <link rel="stylesheet" href="{{ url_for('static', filename='styles/slider.css')}}" type="text/css"/>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico')}}" type="image/x-icon"/>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}" type="image/x-icon"/>
+
+
+  <script src="{{ url_for('static', filename='js/video.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='js/videojs-contrib-hls.js')}}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='js/slider.js')}}" type="text/javascript"></script>
+</head>
+<body id="top">
+<div id="container">
+  <div id="head">
+    <h1><a href="/">
+      <img src="{{ url_for('static', filename='images/logo.jpeg')}}"  alt="Logo" height="120px"/>
+
+    </a></h1>
+    <div id="topads" >
+      <!--<img src="{{ url_for('static', filename='images/footer/1.jpeg')}}" alt="" width="468px">-->
+      {% for slide in slides %}
+      <div class="mySlides fade">
+        <!--<div class="numbertext">3 / 3</div>-->
+        <img src="{{ url_for('static', filename='images/footer/'+slide)}}" width="468px">
+        <!--<div class="text">Caption Three</div>-->
+         <!-- Next and previous buttons -->
+
+      </div>
+      {% endfor %}
+       <!--
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          -->
+      <!-- The dots/circles -->
+      <!-- <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>-->
+    </div>
+  </div>
+  <!-- / End Head -->
+  <div id="wrapper">
+      {% block content %}  {% endblock %}
+  </div>
+  <div id="footer">
+       {% include 'site/partials/footer.html' %}
+  </div>
+  <div class="clear"></div>
+  <div id="topnav">
+  {% include 'site/partials/topnav.html' %}
+  </div>
+  <div id="topbar">
+    <div id="social">
+      {% include 'site/partials/social.html' %}
+    </div>
+    <div id="search">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input type="text" value="Search the site&hellip;"  onfocus="this.value=(this.value=='Search the site&hellip;')? '' : this.value ;" />
+          <input type="submit" name="submit" id="submit" value="GO" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+  <script>
+        var player = videojs('hls-example');
+        player.play();
+        var slideIndex = 0;
+        showSlides();
+  </script>
+</body>
+</html>
+
+
+
