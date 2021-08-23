@@ -5,3 +5,4 @@ class Route(object):
     @staticmethod
     def init_route(app):
         app.register_blueprint(home_page_blueprint, url_prefix='/')
+

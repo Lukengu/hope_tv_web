@@ -1,0 +1,22 @@
+<div id="header">
+    <div class="fl_left">
+      <h1>
+          <a href="index.html"><img src="{{url_for('static', filename='images/logo.png')}}" /></a>
+      </h1>
+
+    </div>
+    <div class="fl_right">
+        <!--<a href="#"><img src="{{ url_for('static', filename='images/demo/468x60.gif')}}" alt="" /></a>-->
+          {% for slide in slides %}
+          <div class="mySlides fade">
+            <!--<div class="numbertext">3 / 3</div>-->
+            <img src="{{ url_for('static', filename='images/footer/'+slide)}}" width="468px">
+            <!--<div class="text">Caption Three</div>-->
+             <!-- Next and previous buttons -->
+
+          </div>
+      {% endfor %}
+
+    </div>
+    <br class="clear" />
+  </div>
