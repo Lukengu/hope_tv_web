@@ -26,3 +26,4 @@ htmlcov/
 *,cover
 /__pycache__/
 hopetv_webenv
+hopetv_venv
