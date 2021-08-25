@@ -20,3 +20,8 @@ def index():
 @home_page.route('/robots.txt', methods=['GET'])
 def robots_dot_txt():
     return "User-agent: *\nDisallow: /"
+
+
+@home_page.route('/.well-known/pki-validation/fileauth.txt', methods=['GET'])
+def verification():
+   return "tsjp05f13pkxr7tlymqznd5n7d2kd698"
